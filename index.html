@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operation</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="header">
+                <h1 class="text-center p-2 font-weight-bold">CRUD operation</h1>
+            </div>
+            <div class="form">
+                <div class="p-2">
+                    <label for="product_name" class="">Product name</label>
+                    <input type="text" name="" class="form-control" id="product_name" placeholder="product name">
+                </div>
+                <div class="p-2">
+                    <label for="product_price" class="">Product price</label>
+                    <input type="text" name="" class="form-control" id="product_price" placeholder="product price">
+                </div>
+                <div class="p-2">
+                    <label for="product_category" class="">Product category</label>
+                    <input type="text" name="" class="form-control" id="product_category"
+                        placeholder="product category">
+                </div>
+
+                <div class="p-2">
+                    <label for="product_description" class="">Product description</label>
+                    <textarea type="text" name="" class="form-control" id="product_description"
+                        placeholder="product description"></textarea>
+                </div>
+                <div class="p-2">
+                    <button class="btn btn-1" id="add" onclick="add_product()">add product</button>
+                    <button class="btn btn-1 " id="update" onclick="add_product()">update product</button>
+
+                </div>
+            </div>
+            <hr>
+            <!-- search section -->
+            <input type="text" placeholder="search here ....." id="search" onkeydown="search_product()" class="form-control">
+
+            <!-- table content -->
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>id </th>
+                        <th>product name</th>
+                        <th>product price</th>
+                        <th>product description</th>
+                        <th colspan="2">
+                            operations
+                        </th>
+                    </tr>
+
+                </thead>
+                <tbody id="tbody">
+               
+
+            </table>
+
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Script.js"></script>
+</body>
+
+</html>
